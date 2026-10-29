@@ -1,0 +1,15 @@
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+python-dotenv>=1.0.0
+sqlalchemy>=2.0.30
+numpy>=1.26.0
+python-multipart>=0.0.9
+# httpx is used both by the test client and by the LLM service (Gemini/OpenAI/Anthropic REST calls)
+httpx>=0.27.0
+pytest>=8.2.0
+# Optional: sentence-transformers for real semantic embeddings (~90 MB download).
+# Without it the app uses an offline keyword-level embedding.
+# sentence-transformers>=3.0.0
+# No LLM vendor SDK is required: all providers are called over HTTPS with httpx.

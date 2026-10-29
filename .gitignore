@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.env
+*.env
+
+# Database files — never commit generated data
+*.db
+*.sqlite
+*.sqlite3
+
+# Model artifacts — sentence-transformers cache (can be large)
+.cache/
+huggingface/
+models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.xml
+
+# IDEs
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.vite/
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets — NEVER commit
+*.pem
+*.key
+*.crt
+secrets/
+
+# Environment files — keep secrets private
+.env
+.env.*
+!.env.example
+
+# Local database backups
+backup/
+*.db-journal
